@@ -9,7 +9,7 @@ A continuación se listan todas las ADAs realizadas en el curso:
   
    [Ir al directorio → READMEADA01](./READMEADA01)
 
-- **ADA02** – Descripción breve del ADA.  
+- **ADA02** – Profundiza en el manejo de estructuras de datos, especialmente pilas (stacks) y colas (queues).  
   [Ir al directorio → ADA02](./ADA02)
 
   [Ir al directorio → READMEADA02](./READMEADA02)
