@@ -1,0 +1,69 @@
+# ADA04
+
+## ¿En qué consistió el ADA?
+En el ADA04 se debe implementar un Árbol Binario de Búsqueda (ABB) en lenguaje C para almacenar y gestionar información de estudiantes.
+
+El atributo clave para ordenar el árbol será la matrícula (un número entero).
+
+## Reflexión personal
+En la creación y manipulación de Árboles Binarios de Búsqueda
+
+
+- Problema01
+Reporte de estudiantes ordenados por matrícula, requiere:
+
+Recorrer el ABB inorden (izquierda → raíz → derecha)
+Imprimir: matrícula, nombre, apellido, promedio
+
+- Problema02
+Reporte ordenado por promedio
+Aquí el orden NO es por el ABB.
+
+- Problema03
+Reporte de estudiantes con promedio < 70:
+
+Recorrer todo el árbol, para cada estudiante, calcular promedio, mostrar si cumple la condición
+
+- Problema04
+Reporte de estudiantes con promedio ≥ 70:
+
+Igual que el anterior, pero cambiando el criterio.
+
+- Problema05
+Insertar un nuevo estudiante en el ABB, se debe:
+
+Crear un nodo nuevo, comparar por la matrícula e insertar en la posición correcta según reglas del ABB
+
+- Problema06
+Eliminar un estudiante por matrícula
+Requiere manejar los tres casos clásicos:
+
+Nodo hoja, nodo con un hijo y nodo con dos hijos → reemplazar por sucesor inorden
+
+- Problema07
+Actualizar una sola calificación de un estudiante, el proceso:
+
+Buscar al estudiante por matrícula, mostrar sus calificaciones, pedir al usuario cuál desea modificar (posición), cambiar solo ESA calificación y no reemplazar todas, solo una
+
+- Problema08
+Contar cuántos alumnos tienen una calificación menor a una matrícula dada una matrícula X:
+
+Buscar al estudiante con matrícula X, obtener su promedio, recorrer todo el árbol y contar cuántos estudiantes tienen un promedio menor que el del alumno X
+
+- Problema09
+Mostrar los valores de los nodos de un nivel proporcionado
+
+El usuario ingresa un nivel (ej.: nivel 2), se debe:
+Hacer un recorrido por niveles (BFS) o ,Recorrido recursivo indicando el nivel actual
+
+- Problema10
+Mostrar el ABB de forma gráfica (ASCII)
+
+Puedes representarlo con:
+
+        100
+       /    \
+    50       150
+   /  \     /   \
+  25  75  125  175
+
