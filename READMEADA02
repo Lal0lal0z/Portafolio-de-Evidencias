@@ -1,0 +1,28 @@
+# ADA02
+
+## ¿En qué consistió el ADA2?
+Desarrollar un programa que simule la atención en un banco con 3 cajas de atención. Los clientes llegan de forma aleatoria a las cajas
+
+
+- Qué aprendiste:
+El uso adecuado de Pilas y Colas
+
+- Problemas01:
+Implementar una pila (Stack). Debes crear una pila con operaciones básicas:
+push, pop, top o peek, isEmpty, isFull (si es estática)
+
+- Problemas02:
+Implementar una cola (Queue), debe tener:
+enqueue, dequeue, front, isEmpty, manejo circular (si se pide)
+
+- Problemas03:
+Aplicar pila o cola en un ejercicio real
+
+Ejemplos comunes:
+Evaluar palíndromos usando una cola, validar paréntesis balanceados usando una pila, simular procesos usando colas circulares.
+
+- Problemas04:
+Manejo de archivos
+Algunos ADA02 avanzados piden:
+leer datos desde archivo, procesarlos con la pila o cola, generar un archivo de salida.
+
