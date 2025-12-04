@@ -1,0 +1,45 @@
+# ADA06
+
+## ¿En qué consistió el ADA6?
+consiste en implementar un algoritmo de ordenamiento dentro de un repositorio compartido de GitHub
+
+Mi equipo equipo trabajó con HEAP SORT.
+
+
+
+- Qué aprendiste
+A trabajar con repositorios remotos, a crear ramas, a implementar funciones dentro de un proyecto existente, a manejar arreglos dinámicos, a documentar código, a colaborar correctamente usando Git y GitHub.
+
+- Problema01
+Usar: git clone https://github.com/luisbastoUADY/sorting-algorithms.git
+
+- Problema02
+El nombre debe seguir el formato mostrado (algo como E01-burbuja, E02-merge).
+Para mi equipo debio ser E05-heap-sort.
+
+- Problema03
+Implementar el algoritmo asignado (Heap Sort)
+Dentro de sorting.c deben:
+
+Completar la función del Heap Sort
+
+- Problema04
+Utilizar y comprender las funciones del repositorio
+Es obligatorio usar las funciones ya incluidas:
+
+Creación de arreglo dinámico, generación aleatoria, entrada manual e impresión.
+
+- Problema05
+Realizar commits con mensajes claros
+Ejemplos de mensajes correctos:
+
+“Agregada función heapify”, “Implementado Heap Sort en sorting.c”, “Corrección de índices en heapify” y “Pruebas con arreglos dinámicos”
+
+- Problema06
+Crear un Pull Request hacia la rama principa.
+Subir su rama al repositorio remoto:
+
+git push origin E05-heap-sort
+
+
+
