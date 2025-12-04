@@ -1,0 +1,52 @@
+# ADA07
+
+## ¿En qué consistió el ADA7?
+se deben implementar dos aplicaciones distintas, ambas usando tablas hash, pero con dos enfoques diferentes de manejo de colisiones.
+
+
+- Qué aprendiste
+El uso correcto de la tabla hash en c y como realizar coliciones de maneras distintas creando un aprendizaje multi-uso.
+
+
+##Aplicación01: Colisiones con direccionamiento abierto
+- Problema01
+Agregar un estudiante por matrícula, se debe:
+
+Tomar la matrícula como clave numérica, aplicar una función hash, insertar el estudiante en la tabla.
+Si la posición está ocupada, aplicar:
+
+sondeo lineal i + 1, o
+sondeo cuadrático i + i².
+
+- Problema02
+Buscar un estudiante por matrícula:
+
+Aplicar la función hash a la matrícula, explorar con el mismo patrón de sondeo (lineal o cuadrático), encontrar el estudiante y retornar toda la información (nombre, carrera, etc.).
+
+- Problema03
+Eliminar un estudiante por matrícula, se debe:
+
+Ubicar la posición del estudiante con el mismo mecanismo hash + sondeo, marcar esa posición como “eliminada” (sin romper la tabla) y puede ser con una bandera especial como DELETED.
+No puedes simplemente ponerla en NULL porque rompe las búsquedas posteriores.
+
+
+##Aplicación02: Colisiones con listas ligadas
+- Problema04
+Agregar un identificador y sus atributos, se debe:
+
+Hash de un string (identificador), insertar en la tabla hash y si hay colisión, agregar el nodo a la lista ligada del bucket.
+
+Atributos mínimos:
+tipo (int, float, string, etc.), valor, ámbito (global, local).
+
+- Problema05
+Buscar un identificador y sus atributos:
+
+Obtener el índice usando la función hash del string, recorrer la lista ligada del bucket, comparar strings para encontrar el identificador correcto y retornar los atributos del identificador.
+
+- Problema06
+Eliminar un identificador y sus atributos
+Se debe:
+
+Localizar el bucket con el hash, recorrer la lista ligada, eliminar el nodo que contenga el identificador (ajustar enlaces) y Liberar memoria.
+
