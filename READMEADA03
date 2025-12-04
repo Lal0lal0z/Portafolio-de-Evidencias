@@ -1,0 +1,42 @@
+# ADA03
+
+## ¿En qué consistió el ADA?
+En la implementación y uso de Listas.
+
+
+- Qué aprendiste:
+La manera adecuada de usar listas para grandes cantidades de datos para el lenguaje de c/c+
+
+- Problema01
+Importar los datos del archivo Movie.csv a la lista doblemente ligada se debes:
+
+Abrir Movie.csv, leer línea por línea, separar los atributos (con ,), Crear nodos por cada película e insertarlos en tu lista doblemente ligada
+
+- Problema02
+Buscar una película por títulose debe permitir:
+Búsqueda exacta, búsqueda que coincida parcialmente ("contains")
+
+- Problema03
+Buscar un actor en el cast, se debe permitir:
+Búsqueda exacta, búsqueda parcial y mostrar:
+
+Nombre de la película donde aparece
+
+Director, Año, Cualquier otro dato del nodo
+
+- Problema04
+Insertar una nueva película
+
+Debes permitir insertar una película:
+Al inicio de la lista, al final y en cualquier lugar (tú decides o lo pide el usuario)
+
+- Problema05
+Eliminar una película por título, se debe incluir:
+
+Búsqueda de la película, mostrar su información antes de eliminarla, preguntar al usuario: "¿Desea eliminar? (s/n)", eliminar correctamente el nodo sin romper la lista
+
+- Problema06
+Actualizar datos de una película
+Pasos:
+
+Buscar la película por título, mostrar sus datos, preguntar qué campo se desea actualizar, solicitar el nuevo valor, guardar el cambio en el nodo
