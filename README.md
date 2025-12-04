@@ -4,7 +4,8 @@ En este repositorio expondré todas las ADAS realizadas en la materia de Estruct
 A continuación se listan todas las ADAs realizadas en el curso:
 
 - **ADA01** – Desarrollar un programa capaz de evaluar expresiones aritméticas infijas: siendo estas sumas, multiplicaciones y restas.
-  [Ir al directorio → ADA01](./ADA01)
+
+   [Ir al directorio → ADA01](./ADA01)
   
   [Ir al directorio → READMEADA01](./READMEADA01)
 
