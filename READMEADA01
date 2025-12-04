@@ -1,0 +1,30 @@
+# ADA01
+
+## ¿En qué consistió el ADA01?
+El objetivo es desarrollar un programa capaz de evaluar expresiones aritméticas infijas, como:
+
+2+3
+
+2*(3+4)
+
+((2+4)*7)+3*(9–5)
+
+- Qué aprendiste
+El uso adecuado de aritméticas infijas en el lenguaje de c/c++
+
+-Problema01:
+Leer y procesar un archivo con expresiones infijas
+Leer desde la terminal un archivo de entrada. Cada línea contiene una expresión infija terminada con ;.
+
+-Problema02
+Convertir expresiones infijas a notación postfija
+Implementar el algoritmo que respeta:
+Precedencia de operadores, paréntesis, operandos múltiples.
+
+-Problema03
+Evaluar la expresión postfija:
+Implementar el algoritmo con una pila (stack), leer la expresión postfija token por token, obtener el resultado final.
+
+-Problema04
+Generar el archivo de salida:
+Por cada expresión infija del archivo de entrada, escribir en el archivo de salida
