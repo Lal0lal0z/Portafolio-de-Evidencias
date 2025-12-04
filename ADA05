@@ -1,1 +1,130 @@
+Introducción
+
+El ordenamiento por montículo, también conocido como heapsort, pertenece a la familia de algoritmos de ordenamiento por comparación y se basa en la estructura de datos montículo binario (heap), normalmente un árbol binario completo donde cada nodo padre tiene un valor mayor o igual al de sus hijos, llamado max-heap, para ordenar en orden ascendente.
+
+Fue publicado por primera vez por J. W. J. Williams en la revista Communications of the ACM vol. 7 No.6 en junio de 1964. Surge como una alternativa determinista y en-lugar (in-place, o sea, que manipula la estructura de datos de la entrada inicial sin usar memoria adicional a la usada para la entrada inicial) a otros algoritmos como Merge Sort y Quick Sort, aprovechando propiedades del montículo para lograr tiempo O(n log n) en todos los casos.
+
+Funcionamiento
+Los pasos de al algoritmo son los siguientes:
+
+1.- Construir un un árbol binario usando un arreglo de datos.
+
+[2,8,5,3,9,1]
+ 
+
+
+2.- Ahora se procede a crear el max-heap, primero se ubica el último nodo no-hoja y se compara con sus nodos hijos, si uno de sus hijos es más grande que el padre, intercambian posición, si ambos hijos son más grandes que el padre, se intercambia con el más grande de los dos hijos.
+
+[2,8,5,3,9,1]
+ 
+[2,9,5,3,8,1]
+ 
+[9,2,5,3,8,1]
+ 
+[9,8,5,3,2,1]
+ 
+3.- Ahora que hemos construido nuestro max heap, el dato más grande se encuentra al inicio del arreglo. A continuación, lo intercambiamos con el último elemento del arreglo y lo eliminamos del arbol.
+[1,8,5,3,2,9]
+ 
+[1,8,5,3,2,9]
+ 
+4.- Ahora volvemos a tener un árbol desordenado. Después volvemos a realizar los pasos 2 y 3 hasta tener un arbol vacio y un arreglo ordenado de mayor a menor.
+
+
+
+
+
+[8,1,5,3,2,9]
+ 
+[2,1,5,3,8,9]
+ 
+[2,1,5,3,8,9]
+ 
+
+
+
+
+
+
+[5,3,2,1,8,9]
+ 
+[1,3,2,5,8,9]
+ 
+[1,3,2,5,8,9]
+ 
+
+
+
+
+
+
+
+
+[3,1,2,5,8,9]
+ 
+[2,1,3,5,8,9]
+ 
+[2,1,3,5,8,9]
+ 
+[1,2,3,5,8,9]
+ 
+[1,2,3,5,8,9]
+ 
+Arreglo final [1,2,3,5,8,9]
+Ventajas
+Tiempo eficiente: Los montones tienen una complejidad temporal promedio de O(log n) para insertar y eliminar elementos, lo que los hace eficientes para grandes conjuntos de datos. Podemos convertir cualquier matriz en un montón en tiempo O(n). Lo más importante es que podemos obtener el mínimo o máximo en tiempo O(1)
+Espacio eficiente : Un árbol de montón es un árbol binario completo, por lo tanto, se puede almacenar en una matriz sin desperdiciar espacio.
+Dinámico: Los montones se pueden redimensionar dinámicamente a medida que se insertan o eliminan elementos, lo que los hace adecuados para aplicaciones dinámicas que requieren agregar o eliminar elementos en tiempo real.
+Basado en prioridades: Los montones permiten procesar elementos en función de la prioridad, lo que los hace adecuados para aplicaciones en tiempo real, como equilibrio de carga, aplicaciones médicas y análisis del mercado de valores.
+Desventajas
+
+Falta de flexibilidad: La estructura de datos del montón no es muy flexible, ya que está diseñada para mantener un orden específico de elementos. Esto significa que puede no ser adecuado para algunas aplicaciones que requieren estructuras de datos más flexibles.
+No es ideal para buscar: Si bien la estructura de datos del montón permite un acceso eficiente al elemento superior, no es ideal para buscar un elemento específico en el montón. La búsqueda de un elemento en un montón requiere recorrer todo el árbol, que tiene una complejidad temporal de O(n).
+No es una estructura de datos estable: La estructura de datos del montón no es una estructura de datos estable, lo que significa que el orden relativo de elementos iguales puede no conservarse cuando se construye o modifica el montón.
+Complejidad: Si bien la estructura de datos del montón permite una inserción, eliminación e implementación eficiente de colas de prioridad, tiene una complejidad temporal en el peor de los casos de O (n log n), que puede no ser óptima para algunas aplicaciones que requieren algoritmos más rápidos.
+Características técnicas
+Estabilidad: No es estable (los elementos iguales pueden cambiar de orden).
+In-place: Sí, usa O(1) espacio adicional.
+Adaptabilidad: No es adaptativo; no mejora en listas parcialmente ordenadas.
+Eficiencia de algoritmo
+Complejidad temporal:
+		 - Mejor caso: Θ(n log n)
+		 - Caso promedio: Θ(n log n)
+		 - Peor caso: Θ(n log n)
+	 Complejidad espacial:
+		 - Espacio adicional: Θ(1)
+
+Comparación con otros algoritmos
+Algoritmo	Estabilidad	In-place	Mejor	Promedio	Peor
+Heap Sort	No	Sí	n log n	n log n	n log n
+Merge Sort	Sí	No	n log n	n log n	n log n
+Quick Sort	No	Sí	n log n	n log n	n²
+
+
+Casos de uso y aplicaciones prácticas
+ 	Escenarios más eficientes:
+		 - Cuando se requiere garantía O(n log n) en todos los casos.
+		 - Entornos con memoria limitada.
+		 - Implementaciones de colas de prioridad.
+Ejemplos reales:
+- Colas de prioridad (CPU scheduling, simulaciones).
+- Selección de k-ésimos elementos grandes.
+- Renderización de gráficos (gestión de prioridades).
+- Algoritmos híbridos como Introsort.
+
+Conclusiones
+Heap Sort es útil cuando se necesita un tiempo garantizado O(n log n) y espacio constante.
+No es estable y suele ser más lento que Quick Sort en promedio, pero su rendimiento predecible y baja memoria lo hacen valioso en entornos con restricciones o cuando los peores casos son inaceptables.
+Recomendaciones:
+- Usar Heap Sort cuando se requiere espacio constante y tiempo garantizado.
+- Evitarlo cuando se necesite estabilidad o se espere un rendimiento óptimo promedio.
+
+Referencias
+https://www.youtube.com/watch?v=2DmK_H7IdTo
+https://www.youtube.com/watch?v=H5kAcmGOn4Q
+https://en.wikipedia.org/wiki/Heapsort
+https://dl.acm.org/doi/pdf/10.1145/512274.512284
+https://www.geeksforgeeks.org/dsa/applications-advantages-and-disadvantages-of-heap/
+
+
 
