@@ -14,27 +14,27 @@ A continuación se listan todas las ADAs realizadas en el curso:
 
   [Ir al directorio → READMEADA02](./READMEADA02)
 
-- **ADA03** – Descripción breve del ADA.  
+- **ADA03** – Utilizando el archivo Movie.csv implemente una Lista Doblemente Ligada de Movies.
   [Ir al directorio → ADA03](./ADA03)
 
   [Ir al directorio → READMEADA03](./READMEADA03)
 
-- **ADA04** – Descripción breve del ADA.  
+- **ADA04** – Desarrollar un sistema de gestión de estudiantes utilizando árboles binarios de búsqueda (ABB).  
   [Ir al directorio → ADA04](./ADA04)
 
   [Ir al directorio → READMEADA04](./READMEADA04)
 
-- **ADA05** – Descripción breve del ADA.  
+- **ADA05** – Investigar y presentar un algoritmo de ordenamiento asignado, explicando su funcionamiento, características, eficiencia y casos de uso, según la categoría correspondiente.
   [Ir al directorio → ADA05](./ADA05)
 
   [Ir al directorio → READMEADA05](./READMEADA05)
 
-- **ADA06** – Descripción breve del ADA.  
+- **ADA06** – Utilizando los algoritmos de ordenamiento presentados por sus compañeros, así como el código fuente en el repositorio del profesor, implemente los algoritmos de ordenamiento que se le asignó al equipo. 
   [Ir al directorio → ADA06](./ADA06)
 
   [Ir al directorio → READMEADA06](./READMEADA06)
 
-- **ADA07** – Descripción breve del ADA.  
+- **ADA07** – Aplicació1: Registro de Estudiantes con Colisiones Controladas. Aplicación2: Tabla de símbolos en un compilador.
   [Ir al directorio → ADA01](./ADA07)
 
   [Ir al directorio → READMEADA07](./READMEADA07)
